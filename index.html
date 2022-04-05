@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title></title>
+</head>
+<style>
+#about-us .myhidden{
+display: none;
+}
+.about-us-nav{
+width:100%;
+margin-top: 20px;
+margin-bottom: 100px;
+}
+.about-us-nav ul{
+display: flex;
+font-size: 15px;
+line-height: 24px;
+justify-content: center;
+border-bottom: 1px solid #f0f0f0;
+}
+.about-us-nav ul li{
+list-style-type:none;
+cursor:pointer;
+margin:0 30px;
+}
+.about-us-nav ul .active{
+color:#bb050c;
+padding-bottom: 20px;
+border-bottom: 2px solid #bb050c;
+}
+
+.about-us-video p{
+text-align: center;
+font-size: 24px;
+}
+#about-us .video-box{
+display: flex;
+justify-content: center;
+margin: 60px 0 100px 0;
+
+}
+.about-us-video video{
+width: 1200px;
+height:675px;
+
+}
+
+#about-us .introduction{
+background: #FAFAFA;
+}
+#about-us .introduction-wrap,
+#about-us .need-doing-think-wrap,
+#about-us .honesty-wrap,
+#about-us .cooperation-wrap,
+#about-us .choose-us-wrap,
+#about-us .connection-wrap
+{
+width:1200px;
+margin: 0 auto;
+}
+#about-us .introduction-title,
+#about-us .need-doing-think-title,
+#about-us .honesty-wrap-title,
+#about-us .choose-us-title,
+#about-us .connection-title
+{
+padding:100px 0 60px 0;
+font-size: 24px;
+text-align: center;
+}
+#about-us .cooperation-title{
+padding:0 0 60px 0;
+font-size: 24px;
+text-align: center;
+}
+#about-us .introduction-content{
+padding:0 0 100px 0;
+}
+#about-us .introduction-content p{
+font-size: 15px;
+text-indent: 40px;
+line-height: 50px;
+}
+
+.need-doing-think{
+padding-bottom: 100px;
+}
+
+#about-us .need-doing-think-items{
+display: flex;
+}
+
+#about-us .need-doing-think-items .item{
+width:280px;
+height: 324px;
+border: 1px solid #CCCCCC;
+margin: 0 18px;
+}
+#about-us .need-doing-think-items .item:hover,
+.honesty-wrap-items .item:hover{
+box-shadow: 0px 0px 8px 0px rgba(34,23,20,0.23);
+}
+#about-us .need-doing-think-items .item img{
+margin:40px 86px;
+}
+#about-us .need-doing-think-items .item p{
+text-align: center;
+font-size: 15px;
+line-height: 50px;
+padding:0 20px;
+}
+#about-us .need-doing-think-items .item-hover{
+position: absolute;
+top:0;
+left:0;
+background: #BB050C;
+color: white;
+display: none;
+width:280px;
+height: 324px;
+}
+.need-doing-think-item-img{
+width:108px;
+}
+#about-us .honesty{
+background: #FAFAFA;
+padding-bottom: 100px;
+}
+.honesty-item-hover{
+position: absolute;
+left:0;
+top: 0;
+background: #BB050C;
+display: none;
+width:380px;
+height: 510px;
+}
+.honesty-item-hover p{
+color: white !important;
+}
+.honesty-item-img-wrap{
+width:382px;
+}
+#about-us .honesty-wrap-items{
+display: flex;
+}
+#about-us .honesty-wrap-items img{
+padding:34px 137px;
+}
+#about-us .honesty-wrap-items .item{
+position: relative;
+width:380px;
+height: 425px;
+border: 1px solid #CCCCCC;
+margin-right: 28px;
+}
+
+#about-us .honesty-wrap-items .item p{
+font-size: 15px;
+line-height: 46px;
+color: #333333;
+padding:0 24px;
+margin: 0;
+text-align: justify;
+}
+
+
+/**
+联系我们
+ */
+#about-us .cooperation-item{
+width:258px;
+text-align: center;
+padding-bottom: 100px;
+}
+#about-us .cooperation-item >img{
+width:58px;
+height:58px;
+}
+
+#about-us .introduction-item-content{
+font-size: 15px;
+line-height: 40px;
+color:#333333;
+}
+#about-us .cooperation-content-title{
+font-size: 18px;
+line-height: 30px;
+
+}
+
+#about-us .cooperation-items{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+#about-us .choose-us-content-boxs,
+.choose-us-content-boxs-1{
+display: flex;
+}
+
+#about-us .choose-us{
+padding-bottom: 50px;
+}
+
+#about-us .choose-us-right,
+#about-us .choose-us-right-1
+{
+margin-left: 80px;
+}
+
+#about-us .choose-us-content-boxs >img{
+width: 595px;
+height:401px;
+}
+
+#about-us .choose-us-right-title{
+font-size: 18px;
+line-height: 50px;
+color: #1A1A1A;
+margin: 0;
+font-weight: 500;
+}
+#about-us .choose-us-right-dettail{
+font-size: 15px;
+line-height: 50px;
+padding-bottom: 50px;
+text-align: justify;
+text-indent: 40px;
+}
+
+.choose-us-left-1{
+width:595px;
+}
+.choose-us-right-1{
+width:600px;
+}
+
+#about-us .connection{
+padding-bottom: 100px;
+}
+#about-us .connection-content-boxs{
+display: flex;
+justify-content: space-around;
+}
+#about-us .conntection-content-box{
+position: relative;
+width: 330px;
+height:196px;
+border:1px solid #CCCCCC;
+}
+#about-us .conntection-content-title{
+letter-spacing: 7px;
+text-align: center;
+font-size: 18px;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+#about-us .connection-content-box-deatail{
+padding:20px 50px;
+font-size: 15px;
+line-height: 40px;
+}
+
+.conntection-border-bottom-1{
+width:225px;
+height:2px;
+background:#AB2025;
+margin: 0 auto;
+}
+
+</style>
+<body>
+<div>
+<img src="https://zs-1256645015.cos.ap-guangzhou.myqcloud.com/OfficiaChinese/banner-about-us.jpg" alt="">
+</div>
+<div id="about-us">
+<div class="introduction">
+<div class="introduction-wrap">
+<p class="introduction-title">平台介绍</p>
+<div class="introduction-content">
+<p>
+阳江友冠信息科技有限公司创立，以运营和提供信息技术支持为主，并提供整体解决方案和实施为主营内容的企业。
+</p>
+<p>它是采用区块链+RFID/NFC，具有可追溯、防伪、分布式记账、数据共享的正品追溯系统网络平台；
+   </p>
+<p>目前已成功应用在食品、农副产品、农资、环保、出版发行、建材、汽配、烟酒、服装、特种设备等多个行业领域，
+帮助企业产品实现来源可查，去向可追，有效杜绝被假冒伪劣。立足先进追溯技术，以承担社会责任，为真品保驾
+护航为企业使命，以链接世界，安全到家为企业愿景。</p>
+</div>
+</div>
+</div>
+<div class="need-doing-think">
+<div class="need-doing-think-wrap">
+<p class="need-doing-think-title">
+我们要做的事
+</p>
+<div class="need-doing-think-items">
+<div class="item">
+<div style="height: 188px;" class="need-doing-think-item-img">
+<img src="https://zs-1256645015.cos.ap-guangzhou.myqcloud.com/OfficiaChinese/about-us-12.png" alt="">
+</div>
+
+<p>
+让每一件产品都拥有
+唯一的“身份证”
+</p>
+</div>
+<div class="item">
+<div style="height: 188px" class="need-doing-think-item-img">
+<img src="https://zs-1256645015.cos.ap-guangzhou.myqcloud.com/OfficiaChinese/about-us-01.png" alt="">
+</div>
+<p>
+为了产品品牌发声杜绝假货乱市
+</p>
+
+</div>
+<div class="item">
+<div style="height: 188px" class="need-doing-think-item-img">
+<img src="https://zs-1256645015.cos.ap-guangzhou.myqcloud.com/OfficiaChinese/link_us_001.png" alt="">
+</div>
+<p>
+让消费者对产品与
+商家绝对信赖
+</p>
+
+</div>
+<div class="item">
+<div style="height: 188px" class="need-doing-think-item-img">
+<img src="https://zs-1256645015.cos.ap-guangzhou.myqcloud.com/OfficiaChinese/about-us-02.png" alt="">
+</div>
+<p>
+成为高效监督管理的
+有力护盾
+</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="honesty">
+<div class="honesty-wrap">
+<p class="honesty-wrap-title">
+满足多方需求，共筑诚信社会
+</p>
+<div class="honesty-wrap-items">
+<div class="item">
+<div class="honesty-item-img-wrap">
+<img src="https://zs-1256645015.cos.ap-guangzhou.myqcloud.com/OfficiaChinese/about-us-10.png" alt="">
+</div>
+
+<p>
+对消费者而言，产品有“证”可扫、有“脸”可刷，可迅速辨别产品真伪，
+了解所选购的产品全程信息，有效保障消费安全，助力消费安全系数提升，
+满足消费者对“放心消费”、“消费透明”的需求。
+
+</p>
+
+</div>
+
+<div class="item">
+<div class="honesty-item-img-wrap">
+<img src="https://zs-1256645015.cos.ap-guangzhou.myqcloud.com/OfficiaChinese/honesty-01.png" alt="">
+</div>
+<p>
+对企业而言，产品全程的可追溯可防伪，有助于生产、渠道、供应等一体化管理，
+行成窜货管理、供应管理等机制，利于维护企业品牌形象，成为诚信城市的有力标杆。
+
+</p>
+
+</div>
+<div class="item">
+<div class="honesty-item-img-wrap">
+<img src="https://zs-1256645015.cos.ap-guangzhou.myqcloud.com/OfficiaChinese/about-us-03.png" alt="">
+</div>
+<p>
+对监管者而言，产品中每个环节信息上传到系统平台，将产品信息、流通信息、
+供应信息等形成溯源档案，使监管与经贸兼容协同，多方追溯信息的互联互通共享，
+强化产品质量安全管理与风险控制。
+
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="connection">
+<div class="connection-wrap">
+<p class="connection-title">联系我们</p>
+<div class="connection-content-boxs">
+<div class="conntection-content-box">
+<p class="conntection-content-title">运营中心总部</p>
+<p class="conntection-border-bottom-1"></p>
+<p class="connection-content-box-deatail">广东省阳江市甜酒小区</p>
+<p class="conntection-border-bottom"></p>
+</div>
+<div class="conntection-content-box">
+<p class="conntection-content-title">总部联系电话</p>
+<p class="conntection-border-bottom-1"></p>
+<p class="connection-content-box-deatail">18666261519</p>
+<p class="conntection-border-bottom"></p>
+</div>
+<div class="conntection-content-box">
+<p class="conntection-content-title">总部邮箱</p>
+<p class="conntection-border-bottom-1"></p>
+<p class="connection-content-box-deatail">871462336@qq.com</p>
+<p class="conntection-border-bottom"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="https://beian.miit.gov.cn/" target="_blank" style="text-align: center">
+<p class="beian">copyright©粤ICP备2020104303号 | 阳江市友冠信息科技有限公司版权所有</p>
+</a>
+</body>
+</html>
